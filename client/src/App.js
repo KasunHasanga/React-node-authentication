@@ -15,7 +15,7 @@ const App=()=> {
    <Router>
      <div className="app">
        <Switch>
-         <Route exact path="/" component={PrivateScreen}/>
+         <PrivateRoute exact path="/" component={PrivateScreen}/>
          <Route exact path="/login" component={LoginScreen}/>
          <Route exact path="/register" component={RegisterScreen}/>
          <Route exact path="/forgotPassword" component={ForgotPasswordScreen}/>

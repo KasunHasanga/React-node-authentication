@@ -50,8 +50,8 @@ const RegisterScreen = ({ history }) => {
 
   return (
     <div className="register-screen">
-      <form onSubmit={RegisterHandler} className="register-screen_form">
-        <h3 className="register-screen_title">Register</h3>
+      <form onSubmit={RegisterHandler} className="register-screen__form">
+        <h3 className="register-screen__title">Register</h3>
         {error && <span class="error-message">{error} </span>}
         <div className="form-group">
           <label htmlFor="name">Username:</label>

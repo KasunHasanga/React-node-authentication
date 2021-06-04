@@ -41,8 +41,8 @@ const LoginScreen = ({ history }) => {
 
   return (
     <div className="login-screen">
-      <form onSubmit={LoginHandler} className="login-screen_form">
-        <h3 className="login-screen_title">Login</h3>
+      <form onSubmit={LoginHandler} className="login-screen__form">
+        <h3 className="login-screen__title">Login</h3>
         {error && <span class="error-message">{error} </span>}
     
         <div className="form-group">
@@ -54,11 +54,13 @@ const LoginScreen = ({ history }) => {
             placeholder="Enter email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            tabIndex={1}
           ></input>
         </div>
 
         <div className="form-group">
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password">Password:
+          <Link to="/forgotPassword" className="login-screen__forgotpassword" tabIndex={4}>forgot Password?</Link></label>
           <input
             type="password"
             required
@@ -66,10 +68,11 @@ const LoginScreen = ({ history }) => {
             placeholder="Enter password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            tabIndex={2}
           ></input>
         </div>
 
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary" tabIndex={3}>
           Login
         </button>
 

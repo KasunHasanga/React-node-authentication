@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./RegisterScreen.css";
 
 const RegisterScreen = ({ history }) => {
-  const [userName, setUsername] = useState("");
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -34,10 +34,10 @@ const RegisterScreen = ({ history }) => {
     try {
       const { data } = await axios.post(
         "/api/auth/register",
-        { userName, email, password },
+        { username, email, password },
         config
       );
-
+console.log(data);
       localStorage.setItem("authToken", data.token);
       history.push("/");
     } catch (error) {
@@ -60,7 +60,7 @@ const RegisterScreen = ({ history }) => {
             required
             id="name"
             placeholder="Enter username"
-            value={userName}
+            value={username}
             onChange={(e) => setUsername(e.target.value)}
           ></input>
         </div>

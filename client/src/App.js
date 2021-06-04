@@ -19,7 +19,7 @@ const App=()=> {
          <Route exact path="/login" component={LoginScreen}/>
          <Route exact path="/register" component={RegisterScreen}/>
          <Route exact path="/forgotPassword" component={ForgotPasswordScreen}/>
-         <Route exact path="/passwordreset:resetToken" component={ResetPasswordScreen}/>
+         <Route exact path="/resetpassword/:resetToken" component={ResetPasswordScreen}/>
        </Switch>
      </div>
    </Router>

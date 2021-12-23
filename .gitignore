@@ -1,11 +1,18 @@
+# for sub director gitignore
+react-node-authentication/server/.gitignore
+react-node-authentication/client/.gitignore
+
+
 node_modules
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+config.env*
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
 
+./server/.config.env
+/server/.config.env
 # testing
 /coverage
 
@@ -22,3 +29,4 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.env

@@ -9,6 +9,12 @@ This repository contain bacis authentication for fullstack website.
 
 - Email Cilent - Sendgrid
 
+## screenshot
+![React-node-authentication3](https://user-images.githubusercontent.com/44415252/147265577-0fbd2f32-1d93-450c-86e8-dbdaf6f178d2.png)
+![React-node-authentication2](https://user-images.githubusercontent.com/44415252/147265582-0b86037d-b958-4960-a5b5-d02b968c9cc4.png)
+![React-node-authentication1](https://user-images.githubusercontent.com/44415252/147265592-d6d38740-6b35-44e5-9841-2c439265d77c.png)
+
+
 ## Istruction
 
 ### Frontend
@@ -26,7 +32,7 @@ Path => ~React-node-authentication/client/
 
 Path => ~React-node-authentication/server/
 
-Add your .env file as following
+Add your config.env file as following (I have include sample file(config.sample) rename it to config.env and modify as your environment )
 
 ```sh
 PORT=5000
